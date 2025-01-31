@@ -1,7 +1,7 @@
-# cyderes
+# CYDERES
 
 
-## AUTH INTO GOOGLE FOR TERRAFORM 
+#### AUTH INTO GOOGLE FOR TERRAFORM 
 
 - first initialize into google, set up your configuration
 `gcloud init`
@@ -18,7 +18,7 @@ gcloud projects add-iam-policy-binding<PROJECT_NAME> \
     --member="serviceAccount:<YOUR_SERVICE_ACCOUNT_EMAIL>” \
     --role="roles/storage.admin" 
 ```
-## SERVICE ACCOUNT JSON FILE FOR TERRAFORM SETUP
+#### SERVICE ACCOUNT JSON FILE FOR TERRAFORM SETUP
 
 - make sure you in the teraform folder to set up the service account json file
 ```
@@ -48,7 +48,7 @@ go to documentation [here](https://cloud.google.com/docs/authentication/set-up-a
 - Apply your resources `terraform apply` and enter yes or `terraform apply
   --auto-approve` to by-pass the yes 
 
-## CLEANUP
+#### CLEANUP
 
 - Make sure you still have your service_account.json before destroying
 - Destroy your resoruces `terraform destroy` and enter yes or `terraform
