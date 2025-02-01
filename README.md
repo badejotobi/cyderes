@@ -30,7 +30,7 @@ gcloud iam service-accounts keys create service_account.json
 - verify you have your service_account.json in your terraform folder before
   next step
 
-##RUN TERRAFORM
+## RUN TERRAFORM
 - Initialize terraform `terraform init`
 
 - if you see an error such as 
